@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Interní, diabetologická, geriatrická ambulance. Ambulance pro chronické a obtížně se hojící rány.">
+  <meta name="keywords"
+    content="ambulance, poliklinika, geriatrie, gemred, germed.cz, germed s.r.o., MUDr. Hana Poláková, as. MVDr. Eduard Szabó, Pardubice, Pardubický kraj, Nám. J.Pernera 217">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="../css/output.css" rel="stylesheet">
+  <title>Germed</title>
+</head>
+
+<body class="font-roboto">
+  <header>
+    <div class="flex items-end justify-between p-4 font-roboto xl:max-w-6xl xl:mx-auto xl:px-0 xl:py-4">
+      <a href="index.html" class="flex items-end">
+        <h1 class="text-3xl text-secondary font-medium uppercase tracking-wider">
+          Ger<span class="text-primary">med</span>
+        </h1>
+        <span class="text-xl text-secondary font-medium tracking-tight">, s. r. o.</span>
+      </a>
+      <div id="openMenu" class="lg:hidden">
+        <svg height="36px" viewBox="0 -960 960 960" width="36px" fill="currentColor"
+          class="text-secondary cursor-pointer">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </div>
+
+      <div class="hidden lg:flex lg:gap-4">
+        <div class="flex items-center gap-6 text-xl font-medium tracking-wide">
+          <a href="tel:+420602487522" class="flex items-center gap-4 text-secondary">
+            <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" class="text-primary">
+              <path
+                d="M765.74-491.57q0-117-81.5-198.5t-198.5-81.5v-83.58q75.72 0 141.81 28.74 66.1 28.74 115.2 77.8 49.1 49.05 77.84 115.22 28.74 66.17 28.74 141.82h-83.59Zm-163.83 0q0-48.56-33.8-82.48-33.81-33.93-82.37-33.93v-83.59q83 0 141.5 58.5t58.5 141.5h-83.83Zm196.57 379.7q-126.44 0-249.87-55.1-123.44-55.1-224.87-156.29Q222.3-424.7 167.21-548.25q-55.1-123.55-55.1-249.99 0-21.35 14.15-35.62 14.15-14.27 35.5-14.27h161.76q19.5 0 33.37 11.53 13.87 11.53 17.31 29.56l25.76 134.97q2.95 19.59-.88 33.22-3.84 13.63-14.71 23.78l-98.44 96.09q19.05 34.37 45.11 66.96 26.07 32.59 58.11 63.63 29.81 29.8 61.42 54.63 31.6 24.83 66.26 44.91l95.67-94.95q11.63-11.4 28.52-16.37 16.89-4.98 34.48-2.03l131.54 27.29q19.03 5.43 30.06 18.44 11.03 13.01 11.03 31.04v163.67q0 21.35-14.27 35.62-14.27 14.27-35.38 14.27Z" />
+            </svg>
+            <span><span class="text-primary">+420</span> 602 487 522</span>
+          </a>
+          <a href="kontakt.html"
+            class="group relative px-4 py-1 bg-secondary text-sm text-white font-medium tracking-wide rounded-sm cursor-pointer hover:bg-primary">
+            Kontakt
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="w-full h-1.5 bg-secondary lg:hidden"></div>
+    <div class="flex items-center justify-center gap-6 px-4 py-3 text-2xl font-medium tracking-wide lg:hidden">
+      <a href="tel:+420602487522" class="flex items-center gap-4 text-secondary">
+        <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor" class="text-primary">
+          <path
+            d="M765.74-491.57q0-117-81.5-198.5t-198.5-81.5v-83.58q75.72 0 141.81 28.74 66.1 28.74 115.2 77.8 49.1 49.05 77.84 115.22 28.74 66.17 28.74 141.82h-83.59Zm-163.83 0q0-48.56-33.8-82.48-33.81-33.93-82.37-33.93v-83.59q83 0 141.5 58.5t58.5 141.5h-83.83Zm196.57 379.7q-126.44 0-249.87-55.1-123.44-55.1-224.87-156.29Q222.3-424.7 167.21-548.25q-55.1-123.55-55.1-249.99 0-21.35 14.15-35.62 14.15-14.27 35.5-14.27h161.76q19.5 0 33.37 11.53 13.87 11.53 17.31 29.56l25.76 134.97q2.95 19.59-.88 33.22-3.84 13.63-14.71 23.78l-98.44 96.09q19.05 34.37 45.11 66.96 26.07 32.59 58.11 63.63 29.81 29.8 61.42 54.63 31.6 24.83 66.26 44.91l95.67-94.95q11.63-11.4 28.52-16.37 16.89-4.98 34.48-2.03l131.54 27.29q19.03 5.43 30.06 18.44 11.03 13.01 11.03 31.04v163.67q0 21.35-14.27 35.62-14.27 14.27-35.38 14.27Z" />
+        </svg>
+        <span> <span class="text-primary">+420</span> 602 487 522 </span>
+      </a>
+    </div>
+    <div class="w-full h-1.5 bg-secondary lg:hidden"></div> -->
+    <div
+      class="flex items-center justify-center gap-6 p-4 bg-secondary text-white text-2xl font-medium tracking-wide lg:hidden">
+      <a href="tel:+420602487522" class="flex items-center gap-4">
+        <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+          <path
+            d="M765.74-491.57q0-117-81.5-198.5t-198.5-81.5v-83.58q75.72 0 141.81 28.74 66.1 28.74 115.2 77.8 49.1 49.05 77.84 115.22 28.74 66.17 28.74 141.82h-83.59Zm-163.83 0q0-48.56-33.8-82.48-33.81-33.93-82.37-33.93v-83.59q83 0 141.5 58.5t58.5 141.5h-83.83Zm196.57 379.7q-126.44 0-249.87-55.1-123.44-55.1-224.87-156.29Q222.3-424.7 167.21-548.25q-55.1-123.55-55.1-249.99 0-21.35 14.15-35.62 14.15-14.27 35.5-14.27h161.76q19.5 0 33.37 11.53 13.87 11.53 17.31 29.56l25.76 134.97q2.95 19.59-.88 33.22-3.84 13.63-14.71 23.78l-98.44 96.09q19.05 34.37 45.11 66.96 26.07 32.59 58.11 63.63 29.81 29.8 61.42 54.63 31.6 24.83 66.26 44.91l95.67-94.95q11.63-11.4 28.52-16.37 16.89-4.98 34.48-2.03l131.54 27.29q19.03 5.43 30.06 18.44 11.03 13.01 11.03 31.04v163.67q0 21.35-14.27 35.62-14.27 14.27-35.38 14.27Z" />
+        </svg>
+        <span> <span>+420</span> 602 487 522 </span>
+      </a>
+    </div>
+
+    <nav class="hidden p-2.75 bg-secondary text-white font-medium lg:block">
+      <ul class="flex items-center gap-4 xl:max-w-6xl lg:mx-auto">
+        <li
+          class="relative after:absolute after:border-r-2 after:border-primary after:h-6 after:translate-x-2 after:bg-primary">
+          <a href="index.html" class="px-2.75 py-1 rounded-sm hover:bg-primary">Úvod</a>
+        </li>
+        <li
+          class="relative after:absolute after:border-r-2 after:border-primary after:h-6 after:translate-x-2 after:bg-primary">
+          <a href="o-nas.html" class="px-2 py-1 rounded-sm bg-primary">O&nbsp;nás</a>
+        </li>
+        <li
+          class="relative after:absolute after:border-r-2 after:border-primary after:h-6 after:translate-x-2 after:bg-primary">
+          <a href="cim-se-zabyvame.html" class="px-2.75 py-1 rounded-sm hover:bg-primary">Čím se zabýváme</a>
+        </li>
+        <li
+          class="relative after:absolute after:border-r-2 after:border-primary after:h-6 after:translate-x-2 after:bg-primary">
+          <a href="smluvni-pojistovny.html" class="px-2.75 py-1 rounded-sm hover:bg-primary">Smluvní pojištovny</a>
+        </li>
+        <li
+          class="relative after:absolute after:border-r-2 after:border-primary after:h-6 after:translate-x-2 after:bg-primary">
+          <a href="cenik-nehrazenych-sluzeb.html" class="px-2.75 py-1 rounded-sm hover:bg-primary">Ceník nehrazených
+            služeb</a>
+        </li>
+        <li>
+          <a href="informace-pro-pacienty-a-pecujici.html" class="px-2.75 py-1 rounded-sm hover:bg-primary">Informace
+            pro pacienty a&nbsp;pečující</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="menu" class="hidden z-50 fixed inset-0 w-full h-full bg-white lg:hidden">
+      <div class="flex items-center justify-end p-4">
+        <div id="closeMenu" class="flex justify-end">
+          <svg height="36px" viewBox="0 -960 960 960" width="36px" fill="currentColor" class="text-secondary">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </div>
+      </div>
+
+      <ul class="flex flex-col text-xl text-center text-secondary font-black">
+        <li>
+          <a href="index.html" class="block p-6">Úvod</a>
+        </li>
+        <li>
+          <a href="o-nas.html" class="block p-6">O&nbsp;nás</a>
+        </li>
+        <li>
+          <a href="cim-se-zabyvame.html" class="block p-6">Čím se zabýváme</a>
+        </li>
+        <li>
+          <a href="smluvni-pojistovny.html" class="block p-6">Smluvní pojištovny</a>
+        </li>
+        <li>
+          <a href="cenik-nehrazenych-sluzeb.html" class="block p-6">Ceník nehrazených služeb</a>
+        </li>
+        <li>
+          <a href="informace-pro-pacienty-a-pecujici.html" class="block p-6">Informace pro pacienty a&nbsp;pečující</a>
+        </li>
+        <li>
+          <a href="kontakt.html" class="block p-6">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="relative text-white bg-gradient-to-tr from-secondary-dark to-primary to-75% p-6 pb-16 lg:p-16">
+    <div class="flex flex-col items-center gap-8 max-w-6xl mx-auto md:flex-row lg:gap-4">
+      <div class="md:hidden">
+        <svg height="260px" viewBox="0 -960 960 960" width="260px" fill="currentColor">
+          <path
+            d="M382.85-504.62q-14.14 0-24.07-11.26-9.93-11.27-8.24-25.2l13.69-106.15q5.69-42.39 38.92-69.89 33.23-27.5 76.85-27.5t76.85 27.5q33.23 27.5 38.92 69.89l13.69 106.15q1.69 13.93-8.24 25.2-9.93 11.26-24.07 11.26h-194.3Zm-2.54-30.76h199.38L565.4-642.1q-4.4-31.13-28.95-51.44-24.56-20.31-56.58-20.31-32.02 0-56.3 20.19-24.28 20.18-28.8 51.58l-14.46 106.7Zm99.69 0Zm-280 320v-57.85q0-26.46 15.15-47.31 15.16-20.84 39.77-32.54 59.31-26.15 115.02-39.61 55.7-13.46 110.04-13.46 54.33 0 109.94 13.57 55.62 13.58 114.51 39.85 25.44 11.5 40.51 32.27Q760-299.69 760-273.23v57.85H200Zm30.77-30.77h498.46v-27.08q0-15.23-10.27-29.35-10.27-14.11-28.11-23.42-54-26.38-105.61-37.88-51.6-11.5-105.24-11.5-53.64 0-105.86 11.5T268.92-326q-17.84 9.31-28 23.42-10.15 14.12-10.15 29.35v27.08Zm249.23 0Z" />
+        </svg>
+      </div>
+      <article class="flex flex-col">
+        <h2 class="mb-6 text-3xl font-bold">MUDr. Hana Poláková</h2>
+        <p class="text-xl font-medium">
+          V roce 1993 jsem úspěšně absolvovala Lékařskou fakultu Univerzity
+          Karlovy v Hradci Králové, poté jsem nastoupila v Pardubické
+          nemocnici na oddělení Geriatrického centra. V roce 1996 jsem pak
+          získala atestaci oboru vnitřního lékařství prvního stupně a v roce
+          2000 jsem dosáhla specializační atestace v oboru geriatrie. Od roku
+          1997 jsem pak v tomto centru působila na pozici zástupce primáře. Od
+          roku 2019 se věnuji vlastní soukromé praxi. V průběhu celého svého
+          profesního života se věnuji vnitřnímu lékařství, geriatrii a léčbě
+          chronických a obtížně se hojících ran.
+        </p>
+      </article>
+      <div class="hidden md:block xl:translate-x-12">
+        <svg height="260px" viewBox="0 -960 960 960" width="260px" fill="currentColor">
+          <path
+            d="M382.85-504.62q-14.14 0-24.07-11.26-9.93-11.27-8.24-25.2l13.69-106.15q5.69-42.39 38.92-69.89 33.23-27.5 76.85-27.5t76.85 27.5q33.23 27.5 38.92 69.89l13.69 106.15q1.69 13.93-8.24 25.2-9.93 11.26-24.07 11.26h-194.3Zm-2.54-30.76h199.38L565.4-642.1q-4.4-31.13-28.95-51.44-24.56-20.31-56.58-20.31-32.02 0-56.3 20.19-24.28 20.18-28.8 51.58l-14.46 106.7Zm99.69 0Zm-280 320v-57.85q0-26.46 15.15-47.31 15.16-20.84 39.77-32.54 59.31-26.15 115.02-39.61 55.7-13.46 110.04-13.46 54.33 0 109.94 13.57 55.62 13.58 114.51 39.85 25.44 11.5 40.51 32.27Q760-299.69 760-273.23v57.85H200Zm30.77-30.77h498.46v-27.08q0-15.23-10.27-29.35-10.27-14.11-28.11-23.42-54-26.38-105.61-37.88-51.6-11.5-105.24-11.5-53.64 0-105.86 11.5T268.92-326q-17.84 9.31-28 23.42-10.15 14.12-10.15 29.35v27.08Zm249.23 0Z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="relative text-white bg-gradient-to-tr from-secondary-dark to-primary to-75% p-6 pb-16 lg:p-16">
+    <div class="flex flex-col items-center gap-8 max-w-6xl mx-auto md:flex-row lg:gap-4">
+      <div class="xl:-translate-x-12">
+        <svg height="260px" viewBox="0 -960 960 960" width="260px" fill="currentColor">
+          <path
+            d="M480-504.85q-49.5 0-82.44-32.94t-32.94-82.83q0-49.88 32.94-82.44 32.94-32.56 82.44-32.56t82.44 32.56q32.94 32.56 32.94 82.44 0 49.89-32.94 82.83T480-504.85ZM200-215.38v-57.85q0-26.46 15.15-47.31 15.16-20.84 39.77-32.54 59.31-26.15 115.02-39.61 55.7-13.46 110.04-13.46 54.33 0 109.94 13.57 55.62 13.58 114.51 39.85 25.44 11.5 40.51 32.27Q760-299.69 760-273.23v57.85H200Zm30.77-30.77h498.46v-27.08q0-15.23-10.27-29.35-10.27-14.11-28.11-23.42-54-26.38-105.61-37.88-51.6-11.5-105.24-11.5-53.64 0-105.86 11.5T268.92-326q-17.84 9.31-28 23.42-10.15 14.12-10.15 29.35v27.08ZM480-535.62q35.92 0 60.27-24.34 24.35-24.35 24.35-60.27t-24.35-60.27q-24.35-24.35-60.27-24.35t-60.27 24.35q-24.35 24.35-24.35 60.27t24.35 60.27q24.35 24.34 60.27 24.34Zm0-84.61Zm0 374.08Z" />
+        </svg>
+      </div>
+      <article class="flex flex-col">
+        <h2 class="mb-6 text-3xl font-bold">MVDr. Eduard Szabó</h2>
+        <p class="text-xl font-medium">
+          Absolvoval jsem střední zdravotnickou školu Hranice na Moravě a roku
+          1990 jsem promoval na Vysoké škole veterinárrní v Brně. Od té doby
+          jsem působil do roku 2017 v různých společnostech na pozicích
+          farmaceutického reprezentanta, regionálního manažera či produktového
+          specialisty. Dlouhodobě se také poskytuji konzultace v oblasti
+          pacientů s obtížnými a unikátními diagnózami v ČR i zahraničí.
+        </p>
+      </article>
+    </div>
+  </div>
+  <section class="flex flex-col items-center max-w-6xl mx-auto py-16 text-center text-secondary leading-5 font-medium">
+    <h2 class="text-4xl font-black uppercase mb-12">Certifikace</h2>
+    <div class="w-full grid grid-cols-[repeat(auto-fit,264px)] px-16 gap-6 justify-center lg:px-0">
+      <div class="flex flex-col justify-between gap-1 h-96 px-6 pt-16 bg-secondary-light">
+        <section>
+          <h2 class="text-2xl font-black uppercase mb-4">Certifikát</h2>
+          <p>
+            Licence pro výkon funkce vedoucího lékaře a&nbsp;primáře&nbsp;v
+            oboru geriatrie
+          </p>
+        </section>
+        <div class="flex items-center justify-center pb-12 text-white">
+          <svg width="96px" height="96px" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M482.85-215.69q10.61-.77 16.03-4.46 5.43-3.7 5.43-11.04 0-6.73-5.64-10.04-5.64-3.31-16.05-3.31-41.24 1.54-90.89-27.27t-61.65-95.81q-1.23-9-5.48-12.96-4.24-3.96-9.81-3.96-6.64 0-10.71 5.04-4.08 5.04-2.85 14.04 15 80.92 73.31 115.73t108.31 34.04ZM479.86-120q-119.94 0-199.9-82.54Q200-285.07 200-408q0-86.15 69.5-190.58Q339-703 480-827.69 621-703 690.5-598.58 760-494.15 760-408q0 122.93-80.1 205.46Q599.79-120 479.86-120Zm.18-30.77q107.34 0 178.27-73.46 70.92-73.46 70.92-183.84 0-75.85-63.42-171.74Q602.38-675.69 480-786.15 357.62-675.69 294.19-579.81q-63.42 95.89-63.42 171.74 0 110.38 70.96 183.84 70.96 73.46 178.31 73.46ZM480-473.85Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-between gap-1 h-96 px-6 pt-16 bg-secondary-light">
+        <section>
+          <h2 class="text-2xl font-black uppercase mb-4">Certifikát</h2>
+          <p>Diplom celoživotního vzdělávání lékařů České lékařské komory</p>
+        </section>
+        <div class="flex items-center justify-center pb-12 text-white">
+          <svg width="96px" height="96px" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M482.85-215.69q10.61-.77 16.03-4.46 5.43-3.7 5.43-11.04 0-6.73-5.64-10.04-5.64-3.31-16.05-3.31-41.24 1.54-90.89-27.27t-61.65-95.81q-1.23-9-5.48-12.96-4.24-3.96-9.81-3.96-6.64 0-10.71 5.04-4.08 5.04-2.85 14.04 15 80.92 73.31 115.73t108.31 34.04ZM479.86-120q-119.94 0-199.9-82.54Q200-285.07 200-408q0-86.15 69.5-190.58Q339-703 480-827.69 621-703 690.5-598.58 760-494.15 760-408q0 122.93-80.1 205.46Q599.79-120 479.86-120Zm.18-30.77q107.34 0 178.27-73.46 70.92-73.46 70.92-183.84 0-75.85-63.42-171.74Q602.38-675.69 480-786.15 357.62-675.69 294.19-579.81q-63.42 95.89-63.42 171.74 0 110.38 70.96 183.84 70.96 73.46 178.31 73.46ZM480-473.85Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-between gap-1 h-96 px-6 pt-16 bg-secondary-light">
+        <section>
+          <h2 class="text-2xl font-black uppercase mb-4">Certifikát</h2>
+          <p>
+            Garance kvality komplexní péče o klienty s chronickými a
+            komplikovanými ránami České společnosti pro léčbu rány
+          </p>
+        </section>
+        <div class="flex items-center justify-center pb-12 text-white">
+          <svg width="96px" height="96px" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M482.85-215.69q10.61-.77 16.03-4.46 5.43-3.7 5.43-11.04 0-6.73-5.64-10.04-5.64-3.31-16.05-3.31-41.24 1.54-90.89-27.27t-61.65-95.81q-1.23-9-5.48-12.96-4.24-3.96-9.81-3.96-6.64 0-10.71 5.04-4.08 5.04-2.85 14.04 15 80.92 73.31 115.73t108.31 34.04ZM479.86-120q-119.94 0-199.9-82.54Q200-285.07 200-408q0-86.15 69.5-190.58Q339-703 480-827.69 621-703 690.5-598.58 760-494.15 760-408q0 122.93-80.1 205.46Q599.79-120 479.86-120Zm.18-30.77q107.34 0 178.27-73.46 70.92-73.46 70.92-183.84 0-75.85-63.42-171.74Q602.38-675.69 480-786.15 357.62-675.69 294.19-579.81q-63.42 95.89-63.42 171.74 0 110.38 70.96 183.84 70.96 73.46 178.31 73.46ZM480-473.85Z" />
+          </svg>
+        </div>
+      </div>
+      <div class="flex flex-col justify-between gap-1 h-96 px-6 pt-16 bg-secondary-light">
+        <section>
+          <h2 class="text-2xl font-black uppercase mb-4">Certifikát</h2>
+          <p>Certifikát o aplikaci amniové membrány</p>
+        </section>
+        <div class="flex items-center justify-center pb-12 text-white">
+          <svg width="96px" height="96px" viewBox="0 -960 960 960" fill="currentColor">
+            <path
+              d="M482.85-215.69q10.61-.77 16.03-4.46 5.43-3.7 5.43-11.04 0-6.73-5.64-10.04-5.64-3.31-16.05-3.31-41.24 1.54-90.89-27.27t-61.65-95.81q-1.23-9-5.48-12.96-4.24-3.96-9.81-3.96-6.64 0-10.71 5.04-4.08 5.04-2.85 14.04 15 80.92 73.31 115.73t108.31 34.04ZM479.86-120q-119.94 0-199.9-82.54Q200-285.07 200-408q0-86.15 69.5-190.58Q339-703 480-827.69 621-703 690.5-598.58 760-494.15 760-408q0 122.93-80.1 205.46Q599.79-120 479.86-120Zm.18-30.77q107.34 0 178.27-73.46 70.92-73.46 70.92-183.84 0-75.85-63.42-171.74Q602.38-675.69 480-786.15 357.62-675.69 294.19-579.81q-63.42 95.89-63.42 171.74 0 110.38 70.96 183.84 70.96 73.46 178.31 73.46ZM480-473.85Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-secondary text-white font-medium">
+    <div
+      class="flex flex-col items-center gap-12 p-16 xl:max-w-6xl xl:mx-auto lg:grid lg:grid-cols-3 lg:items-start lg:gap-4 xl:px-0">
+      <nav>
+        <ul class="flex flex-col items-center gap-2 text-center lg:items-start lg:gap-1">
+          <li><a class="hover:text-primary" href="index.html">Úvod</a></li>
+          <li>
+            <a class="hover:text-primary" href="o-nas.html">O&nbsp;nás</a>
+          </li>
+          <li>
+            <a class="hover:text-primary" href="cim-se-zabyvame.html">Čím se zabýváme</a>
+          </li>
+          <li>
+            <a class="hover:text-primary" href="smluvni-pojistovny.html">Smluvní pojišťovny</a>
+          </li>
+          <li>
+            <a class="hover:text-primary" href="cenik-nehrazenych-sluzeb.html">Ceník nehrazených služeb</a>
+          </li>
+          <li>
+            <a class="hover:text-primary" href="informace-pro-pacienty-a-pecujici.html">Informace pro pacienty
+              a&nbsp;pečující</a>
+          </li>
+          <li>
+            <a class="hover:text-primary" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex flex-col items-center">
+        <h2 class="text-center text-3xl font-black mb-4">ORDINAČNÍ HODINY</h2>
+        <dl class="grid grid-cols-2 gap-2 lg:gap-1">
+          <dt>Pondělí</dt>
+          <dd>8–18:00 hod.</dd>
+          <dt>Úterý</dt>
+          <dd>8–14:30 hod.</dd>
+          <dt>Středa</dt>
+          <dd>8–18:00 hod.</dd>
+          <dt>Čtvrtek</dt>
+          <dd>8–13:30 hod.</dd>
+          <dt>Pátek</dt>
+          <dd>neordinujeme</dd>
+        </dl>
+      </div>
+      <div>
+        <h2 class="text-center text-3xl font-black mb-4 lg:text-right">
+          KONTAKT
+        </h2>
+        <ul class="flex flex-col gap-2 text-center lg:text-right lg:gap-1">
+          <li>Náměstí J. Pernera 217</li>
+          <li>530 02 Pardubice</li>
+          <li>
+            <a class="hover:text-primary" href="tel:+420602487522">Tel.: 602 487 522</a>
+          </li>
+          <li>
+            <a class="hover:text-primary" href="mailto:germed@seznam.cz">germed@seznam.cz</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../javascript/menu.js"></script>
+</body>
+
+</html>
